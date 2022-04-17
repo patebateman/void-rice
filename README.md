@@ -1,15 +1,13 @@
 # void-rice
 
 mad-ara's void rice (https://github.com/mad-ara/void-rice) edited to my liking.
-`git clone https://github.com/0x0f0f0f/void-rice`
-`cd void-rice`
 ```sh
-cd void-rice # CD into this repository
-sudo ./install-dependencies.sh # Install void packages
-./build.sh  # Build
-sudo ./install.sh # Install rice
-mv ~/.xinitrc ~/.xinitrc.old # Backup old .xinitrc
-cp .xinitrc ~/.xinitrc # Apply .xinitrc
+cd void-rice
+sudo ./install-dependencies.sh
+./build.sh
+sudo ./install.sh
+mv ~/.xinitrc ~/.xinitrc.old
+cp .xinitrc ~/.xinitrc
 ```
 recoompiling:
 ```
