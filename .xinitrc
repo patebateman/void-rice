@@ -1,10 +1,9 @@
 slstatus &
 
-# Uncomment and edit to set the wallpaper.
-# feh --bg-fill ~/Pictures/wallpaper.png
+feh --bg-fill ~/wallpaper/wallpaper.png
 
-# Hides the mouse cursor after 3 seconds of inactivity
+devmon &
+
 unclutter -idle 3 &
 
-# Saving a dwm log
 exec dwm > ~/.dwm.log
