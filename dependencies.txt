@@ -13,17 +13,31 @@ freetype-devel
 font-firacode
 font-Siji
 
-# big list of utilities
+# utilities
 
+# browser
+firefox-esr
+# music player + video player
+mpv
+# shell (use my config if needed)
+fish-shell
+# audio
+alsa-utils
 # screenshot utility
 scrot
 # lockscreen
 physlock
 # image viewer and background setter
 feh
-# gui for setting customizing gtk appearance
+# customizing gtk appearance
 lxappearance
-# nice gui file manager
+# text editor (cope vimtards)
+nano
+# file manager
 pcmanfm
 # hide mouse cursor when writing
 unclutter
+
+# games (to be updated someday)
+openttd
+xonotic
