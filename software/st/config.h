@@ -102,7 +102,7 @@ static const char *colorname[] = {
   [8]  = "#333333", /* black   */
   [9]  = "#BD3538", /* red     */
   [10] = "#AFC563", /* green   */
-  [11] = "#e7ab65", /* yellow  */
+  [11] = "#16BE5A", /* yellow  */
   [12] = "#5cafdf", /* blue    */
   [13] = "#a987b2", /* magenta */
   [14] = "#5cafdf", /* cyan    */
@@ -138,7 +138,7 @@ static unsigned int defaultunderline = 7;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers

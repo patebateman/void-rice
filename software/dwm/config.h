@@ -24,7 +24,7 @@ static const unsigned int tagspacing = 10;       /* size of icon area */
 static const char colors[NUMCOLORS][MAXCOLORS][9] = {
     // border	 	foreground	  background
     { "#444444",	 "#ffffff", 	  "#151515" },  // 0 = normal
-    { "#BD3538", 	 "#ffffff", 	  "#BD3538" },  // 1 = selected
+    { "#16BE5A", 	 "#ffffff", 	  "#16BE5A" },  // 1 = selected
     { "#151515", 	 "#ffffff", 	  "#da846b" },  // 2 = urgent
     { "#151515", 	 "#ffffff", 	  "#444444" },  // 3 = occupied
     { "#151515", 	 "#151515", 	  "#e7ab65" },  // 4 = yellow
@@ -77,7 +77,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[]   = { "dmenu_run", "-i", "-l", "20", "-p", "Search >", "-fn", "Fira Code:style=Regular:size=10" , "-nb", "#151515", "-nf", "#cfcfcf", "-sb", "#BD3538", "-sf", "#222222", "-w", "0", "-h", "20", NULL };
+static const char *dmenucmd[]   = { "dmenu_run", "-i", "-l", "20", "-p", "Search >", "-fn", "Fira Code:style=Regular:size=10" , "-nb", "#151515", "-nf", "#cfcfcf", "-sb", "#16BE5A", "-sf", "#222222", "-w", "0", "-h", "20", NULL };
 static const char *termcmd[]    = { "st", NULL };
 static const char *voldown[]    = { "pulsemixer", "--change-volume", "-5", NULL};
 static const char *volup[]      = { "pulsemixer", "--change-volume", "+5", NULL};
@@ -102,7 +102,7 @@ static Key keys[] = {
     { MODKEY,               XK_m,      		setlayout,      {.v = &layouts[2]} },
     { MODKEY,               XK_p,      		spawn,          {.v = dmenucmd } },
     { MODKEY,             	XK_q,      		killclient,     {0} },
-    { MODKEY,               XK_s,      		spawn,          SHCMD("gscreenshot-cli -f ~/screenshots/ && notify-send \"`date`\" \"Screenshot saved\"") },
+    { MODKEY,               XK_s,      		spawn,          SHCMD("scrot") },
     { MODKEY,               XK_t,      		setlayout,      {.v = &layouts[0]} },
     { MODKEY,               XK_x,      		spawn,          SHCMD("physlock") },
     { MODKEY,               XK_comma,  		focusmon,       {.i = -1 } },
